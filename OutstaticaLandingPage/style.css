@@ -352,3 +352,10 @@ width: 100%;
 background-color: var(--amarath);
 color: white;
 }
+
+/* team section*/
+
+.carousel-img{
+    width: 100%;
+    object-fit: cover;
+}
