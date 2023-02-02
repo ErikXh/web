@@ -340,8 +340,6 @@ color: white;
 .price-btn{
 width: 80%;
 height: 2rem;
-position: relative;
-top: 1rem;
 border: none;
 border-radius: 5px 5px 0px 0px;
 }
@@ -358,4 +356,8 @@ color: white;
 .carousel-img{
     width: 100%;
     object-fit: cover;
+}
+
+.left-arrow, .right-arrow{
+    cursor: pointer;
 }
