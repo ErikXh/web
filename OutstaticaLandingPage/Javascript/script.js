@@ -13,13 +13,13 @@ const carouselImg = document.getElementById('carousel');
 const arrowLeft = document.getElementsByClassName("move-left--js");
 const arrowRight = document.getElementsByClassName("move-right--js");
 
- arrowLeft.addEventListener('click', ()=>{
-     changeBackgroundImage(-1);
- })
+//  arrowLeft.addEventListener('click', ()=>{
+//      changeBackgroundImage(-1);
+//  })
 
-arrowRight.addEventListener('click', ()=>{
-    changeBackgroundImage(+1)
-})
+// arrowRight.addEventListener('click', ()=>{
+//     changeBackgroundImage(+1)
+// })
 
 const images = [
 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -27,7 +27,14 @@ const images = [
 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 ]
 
-console.log(images[1])
+//console.log(images[1])
+
+arrowLeft.addEventListener('click', ()=>{
+    carouselImg.style.backgroundImage = "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+})
+
+
+
 
 
 // function changeBackgroundImage(num){
