@@ -19,7 +19,7 @@ const images = [
 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 ]
 
-carouselImg.style.background = 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+//carouselImg.style.background="url(https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)";
 
 // console.log(images[0]); the links are displayed in the console
 
@@ -28,4 +28,15 @@ carouselImg.style.background = 'https://images.pexels.com/photos/3183150/pexels-
 function changeImage(num){
    
 return null;
+
 }
+
+// left/ right arrow events
+
+arrowLeft.addEventListener('click', ()=>{
+    changeImage(-1);
+})
+
+arrowRight.addEventListener('click', ()=>{
+    changeImage(1);
+})
