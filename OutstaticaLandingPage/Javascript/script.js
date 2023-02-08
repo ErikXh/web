@@ -26,9 +26,17 @@ const images = [
 // this function changes the image based on on the index of the array "images" above
 
 function changeImage(num){
-   
-return null;
 
+let count = images[num];
+
+for(i = 0; count <= images.length; i++){
+
+carouselImg.style.backgroundImage = "url(images[i])";
+
+if(num < 0){
+    carouselImg.style.backgroundImage = "url(images[0])"; 
+}
+}
 }
 
 // left/ right arrow events
@@ -38,5 +46,14 @@ arrowLeft.addEventListener('click', ()=>{
 })
 
 arrowRight.addEventListener('click', ()=>{
-    changeImage(1);
+    changeImage(+1);
 })
+
+// remove the nav links after click
+
+const navLinks = document.getElementsByClassName("li")
+
+function removeLinks(){
+    navLinks.style.display = "none";
+}
+
