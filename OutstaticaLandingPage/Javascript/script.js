@@ -1,4 +1,5 @@
 
+
 // navbar
 const menuBtn = document.getElementById("menubtn");
 const navMenu = document.getElementById("navmenu");
@@ -10,8 +11,6 @@ menuBtn.addEventListener('click', ()=>{
 // Test carousel
 
 const carouselImg = document.getElementById('carousel');
-const arrowLeft = document.getElementsByClassName("move-left--js");
-const arrowRight = document.getElementsByClassName("move-right--js");
 
 const images = [
 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -19,41 +18,45 @@ const images = [
 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 ]
 
-//carouselImg.style.background="url(https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)";
+//carouselImg.style.background="url(link)";
 
 // console.log(images[0]); the links are displayed in the console
 
 // this function changes the image based on on the index of the array "images" above
 
-function changeImage(num){
+ function changeImage(num){
 
-let count = images[num];
+ if(num == 0){
+     carouselImg.style.background="url('" + images[0] + "')";
+ }
 
-for(i = 0; count <= images.length; i++){
+ if(num == 1){
+     carouselImg.style.background="url('" + images[1] + "')";
+ }
 
-carouselImg.style.backgroundImage = "url(images[i])";
+ if(num == 2){
+     carouselImg.style.background="url('" + images[2] + "')";
+ }
 
-if(num < 0){
-    carouselImg.style.backgroundImage = "url(images[0])"; 
-}
-}
-}
+ if(num > images.length){
+     carouselImg.style.background="url('" + images[0] + "')";
+ }
+
+ if(num < 0){
+     carouselImg.style.background="url('" + images[2] + "')";
+ }
+
+ }
 
 // left/ right arrow events
 
-arrowLeft.addEventListener('click', ()=>{
-    changeImage(-1);
-})
+const arrowLeft = document.querySelector(".move-left--js");
+const arrowRight = document.querySelector(".move-right--js");
 
 arrowRight.addEventListener('click', ()=>{
-    changeImage(+1);
+    changeImage(-1)
 })
 
-// remove the nav links after click
-
-const navLinks = document.getElementsByClassName("li")
-
-function removeLinks(){
-    navLinks.style.display = "none";
-}
-
+arrowLeft.addEventListener('click', ()=>{
+    changeImage(+1)
+})
