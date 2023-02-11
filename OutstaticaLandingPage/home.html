@@ -470,18 +470,21 @@ Purchase now
 
 <section class="section" id="contact">
 
-<div class="container d-flex flex-column align-center">
+<div class="container d-flex flex-column align-center w-80">
 
-<div id="contact-info w-50 d-grid align-center p-1">
-    <form action="#" method="post" class="w-100 d-flex flex-column">
+<div class="d-grid align-center p-1 w-100">
+    <form action="#" method="post" class="contact-info w-100 d-flex flex-column align-center p-1">
     <label for="Name">
+        <div class="fontSize-s">Name:</div>
         <input type="text" name="name" class="m-bottom-1">
     </label>    
     <label for="email">
+        <div class="fontSize-s">Email:</div>
         <input type="email" name="email" class="m-bottom-1">
     </label>
     <label for="message">
-    <textarea name="Message" id="" cols="20" rows="3" class="m-bottom-1"></textarea>
+        <div class="fontSize-s">Message:</div>
+    <textarea name="Message" cols="21" rows="3" class="m-bottom-1"></textarea>
     </label>
     <button class="btn-red">Submit</button>
     </form>
@@ -489,14 +492,48 @@ Purchase now
 
 <!-- location / map-->
 
-<div class="container w-80 p-1">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47897.35277262688!2d19.759807!3d41.38311015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1676067144181!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="container p-1">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47897.35277262688!2d19.759807!3d41.38311015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1676067144181!5m2!1sen!2s" 
+width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 </div>
 </section>
 
 </main>
-<footer>
+<footer class="footer section">
+    <div class="container d-flex flex-column align-center flex-warp">
+    <!-- contact numbers -->
+    <div class="d-flex justify-even w-60 p-1">
+        <div class="d-grid align-center">
+        <i class="ri-phone-line fontSize-xxl color-white"></i>  
+        </div>
+        <div class="d-flex flex-column">
+            <a href="tel:+355123456789" class="color-white">+355123456789</a>
+            <a href="tel:+355987654321" class="color-white">+355987654321</a>
+        </div>
+    </div>
+
+    <!-- contact emails -->
+    <div class="d-flex justify-even w-60 p-1">
+        <div class="d-grid align-center">
+        <i class="ri-mail-line fontSize-xxl color-white"></i>  
+        </div>
+        <div class="d-flex flex-column">
+            <a href="mailto:unname@email.com" class="color-white">unname@email.com</a>
+            <a href="mailto:urwebsite@email.com" class="color-white">urwebsite@email.com</a>
+        </div>
+    </div>
+
+    <!-- contact emails -->
+    <div class="d-flex justify-even w-60 p-1">
+        <div class="d-grid align-center">
+        <i class="ri-map-pin-5-line fontSize-xxl color-white"></i>  
+        </div>
+        <div class="d-flex flex-column">
+            <a href="shorturl.at/ovzIO" class="color-white">Ur address gest here, street, Crossroad 123.</a>
+        </div>
+    </div>
+    </div>
 </footer>
 <script src="Javascript/script.js"></script>
 </body>
