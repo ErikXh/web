@@ -20,7 +20,7 @@ const images = [
 
 // this function changes the image based on on the index of the array "images" above
 
-let currentIndex = 2;
+let currentIndex = 2; // 2 is the index of the image that is visible initially
 
 function right(){
 if(currentIndex == 2){
