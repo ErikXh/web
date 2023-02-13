@@ -33,6 +33,10 @@ padding-top: 5rem;
 padding-bottom: 5rem;
 }
 
+.home-section{
+padding: 10rem 0rem 5rem;
+}
+
 .text-center{
     text-align: center;
 }
