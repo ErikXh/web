@@ -8,6 +8,46 @@ menuBtn.addEventListener('click', ()=>{
     navMenu.classList.toggle("showMenu");
 })
 
+// change color nav
+
+let homeColor = document.getElementById("navigationbar");
+
+function changeColorNav(){
+
+if(window.scrollY < 40){
+homeColor.classList.remove("home-color")
+homeColor.classList.add("home-color-transparent"); 
+}
+
+if(window.scrollY > 40){
+homeColor.classList.add("home-color")
+homeColor.classList.remove("home-color-transparent"); 
+}
+}
+
+let topBtn = document.getElementById("top-btn");
+
+function backToTop(){
+if(window.scrollY > 100){
+topBtn.classList.remove("d-none")
+topBtn.classList.add("d-block"); 
+}
+
+if(window.scrollY < 100){
+topBtn.classList.add("d-none")
+topBtn.classList.remove("d-block"); 
+} 
+}
+
+topBtn.addEventListener('click',()=>{
+    document.documentElement.scrollTop = 0;
+})
+
+window.onscroll = function(){
+    changeColorNav();
+    backToTop();
+}
+
 // Test carousel
 
 const carouselImg = document.getElementById('carousel');
@@ -51,4 +91,16 @@ arrowRight.addEventListener('click', ()=>{
 
 arrowLeft.addEventListener('click', ()=>{
     left();
+})
+
+// "button not working" function
+function inactive(){
+    alert("This button doesn't do anything ... at the moment!")
+}
+
+const redBtns = document.querySelectorAll(".btn-red");
+
+// this event listener does not work atm
+redBtns.addEventListener('click', ()=>{
+    inactive();
 })
