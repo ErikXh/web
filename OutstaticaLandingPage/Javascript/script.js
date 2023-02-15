@@ -100,7 +100,8 @@ function inactive(){
 
 const redBtns = document.querySelectorAll(".btn-red");
 
-// this event listener does not work atm
-redBtns.addEventListener('click', ()=>{
-    inactive();
+redBtns.forEach((e) =>{
+e.addEventListener('click', ()=>{
+inactive();
+})
 })
