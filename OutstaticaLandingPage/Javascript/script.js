@@ -105,3 +105,13 @@ e.addEventListener('click', ()=>{
 inactive();
 })
 })
+
+// remove navmenu after click
+
+const navLinks = document.querySelectorAll(".nav-link")
+
+navLinks.forEach((e)=>{
+    e.addEventListener('click', ()=>{
+        navMenu.classList.remove("showMenu")
+    })
+})
