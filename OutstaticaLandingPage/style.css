@@ -460,5 +460,14 @@ transition: 0.3s ease-out;
     box-shadow: 0px 0px 5px black;
 }
 
-
 /* media queries */
+
+@media only screen and (min-width: 767px) and (max-width: 992px)  {
+
+
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px)  {
+
+
+}
