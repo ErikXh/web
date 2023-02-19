@@ -506,6 +506,10 @@ width: 80%;
 width: 90%;
 }
 
+.flex-s-row{
+    flex-direction: row;
+}
+
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1200px)  {
