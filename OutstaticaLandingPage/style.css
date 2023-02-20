@@ -506,8 +506,20 @@ width: 80%;
 width: 90%;
 }
 
+.w-s-100{
+    width: 100%;
+}
+
 .flex-s-row{
     flex-direction: row;
+}
+
+.align-s-unset{
+    align-items: unset;
+}
+
+.carousel-img{
+    height: 18rem;
 }
 
 }
