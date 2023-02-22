@@ -524,7 +524,7 @@ width: 90%;
 
 }
 
-@media only screen and (min-width: 993px) and (max-width: 1200px)  {
+@media only screen and (min-width: 993px) and (max-width: 3400px)  {
 
 /* width */
 
@@ -574,6 +574,10 @@ width: 90%;
 
 .flex-l-row{
     flex-direction: row;
+}
+
+.justify-l-center{
+    justify-content: center;
 }
 
 .align-l-unset{
