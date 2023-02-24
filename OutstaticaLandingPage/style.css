@@ -585,7 +585,7 @@ width: 90%;
 }
 
 .carousel-img{
-    height: 18rem;
+    height: 26rem;
 }
 
 .m-l-0{
@@ -594,5 +594,13 @@ margin: 0;
 
 .section-l-top{
 padding-top: 5rem;
+}
+
+.p-l-top-1{
+padding-top: 1rem;
+}
+
+.max-w-1024{
+    max-width: 1024px;
 }
 }
