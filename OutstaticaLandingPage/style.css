@@ -603,4 +603,8 @@ padding-top: 1rem;
 .max-w-1024{
     max-width: 1024px;
 }
+
+#newsletter div{
+    grid-template-columns: 1fr 2fr;
+}
 }
