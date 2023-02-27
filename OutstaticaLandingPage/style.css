@@ -580,6 +580,10 @@ width: 90%;
     justify-content: center;
 }
 
+.justify-l-around{
+    justify-content: space-around;
+}
+
 .align-l-unset{
     align-items: unset;
 }
@@ -600,11 +604,19 @@ padding-top: 5rem;
 padding-top: 1rem;
 }
 
+.m-right-1{
+    margin-right: 1rem;
+}
+
 .max-w-1024{
     max-width: 1024px;
 }
 
+.max-w-400{
+    max-width: 412px;
+}
+
 #newsletter div{
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 3fr;
 }
 }
