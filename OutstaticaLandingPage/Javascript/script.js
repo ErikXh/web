@@ -115,3 +115,20 @@ navLinks.forEach((e)=>{
         navMenu.classList.remove("showMenu")
     })
 })
+
+// form validation
+
+const form = document.getElementById("form");
+
+
+form.addEventListener('submit', (e)=>{
+
+    e.preventDefault();
+ 
+    let userName = document.getElementById("user_name").value;
+    let userEmail = document.getElementById("user_email").value;
+    let userText = document.getElementById("user_text").value;
+
+    console.log(userName, userEmail);
+    console.log(userText);
+})

@@ -236,7 +236,7 @@ color:rgb(12, 12, 12);
 
 /* button */
 
-.btn-red{
+.btn-red, .btn-red-s{
 width:8rem;
 height: 2rem;
 background-color:var(--amarath);
@@ -248,7 +248,7 @@ border-radius: 5px;
 transition: .3s ease-in-out;
 }
 
-.btn-red:hover{
+.btn-red-s, .btn-red:hover{
 cursor: pointer;
 box-shadow: 0px 0px 5px var(--amarath);
 }
