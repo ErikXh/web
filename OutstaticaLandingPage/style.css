@@ -315,6 +315,11 @@ transition: 0.2s ease-out;
 text-align: center;
 }
 
+.nav-link:hover{
+    transform: scale(1.09);
+    transition: 0.1s ease-in;
+}
+
 .showMenu{
 left:0%
 }
