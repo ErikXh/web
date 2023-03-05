@@ -221,7 +221,7 @@ color: rgb(153, 153, 153);
 }
 
 .bg-color-grey{
-background-color: #ececec;
+background-color: #f1f1f1a4;
 }
 
 .color-black{
@@ -269,9 +269,10 @@ border-radius: 5px;
 transition: .3s ease-in-out;
 }
 
-.btn-white:hover{
+.btn-white:hover, .ri-apple-fill:hover{
 cursor: pointer;
-background-color:rgb(215, 215, 215);
+color: white;
+background-color:var(--amarath);
 box-shadow: 0px 0px 5px var(--amarath);
 }
 
@@ -287,8 +288,9 @@ border-radius: 50%;
 transition: 0.3s ease-in-out;
 }
 
-.top-button{
+.top-button:hover{
     cursor: pointer;
+    box-shadow: 0px 0px 5px black;
 }
 
 /* Navbar */
