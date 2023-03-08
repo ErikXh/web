@@ -135,3 +135,16 @@ form.addEventListener('submit', (e)=>{
 
 /* animations upon page loading experiment */
 
+// swipper animations
+
+const sr = ScrollReveal({
+    distance:'60px',
+    duration:2000,
+    //reset: true,
+  })
+  
+  sr.reveal( '.home-image, .home-title' ,{
+  
+   origin:'top',
+   interval:90,
+  })
