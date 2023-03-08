@@ -132,3 +132,6 @@ form.addEventListener('submit', (e)=>{
     console.log(userName, userEmail);
     console.log(userText);
 })
+
+/* animations upon page loading experiment */
+
