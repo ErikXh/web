@@ -348,6 +348,28 @@ z-index: 1;
 width: 2rem;
 }
 
+/* test animation */
+
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+.fade-in {
+animation: fadeIn 1s ease-out forwards;
+}
+
+.fade-in-delay{
+animation: fadeIn 1.25s ease-out forwards;  
+}
+  
+
 
 /* features section */
 

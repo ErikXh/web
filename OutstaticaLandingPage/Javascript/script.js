@@ -137,14 +137,14 @@ form.addEventListener('submit', (e)=>{
 
 // swipper animations
 
-const sr = ScrollReveal({
-    distance:'60px',
-    duration:2000,
-    //reset: true,
-  })
+// const sr = ScrollReveal({
+//     distance:'60px',
+//     duration:2000,
+//     reset: true,
+// })
   
-  sr.reveal( '.home-image, .home-title' ,{
+//   sr.reveal( '.home__image, .home__title' ,{
   
-   origin:'top',
-   interval:90,
-  })
+//    origin:'top',
+//    interval:90,
+//   })
