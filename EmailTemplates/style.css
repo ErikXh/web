@@ -43,7 +43,7 @@ padding: 0rem 0rem 5rem;
     text-align: center;
 }
 
-.capitalisation{
+.capitalize{
     text-transform: capitalize;
 }
 
@@ -108,6 +108,10 @@ flex-wrap: wrap;
 
 .d-grid{
 display: grid;
+}
+
+.content-center{
+    justify-content: center;
 }
 
 /* width */
@@ -229,17 +233,34 @@ margin-bottom: 3rem;
 /* home section */
 
 .logo-img{
-border-radius: 10%;
+    border-radius: 10%;
 }
 
 
 .landing-img{
-border-radius: 10%;
+    border-radius: 10%;
 }
 
-div div{
+.fade{
     max-width: 35rem;
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.93), transparent);
     position: relative;
     bottom: 22px;
+}
+
+.product-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image{
+    width:8rem;
+    border-radius: 10px;
 }
