@@ -53,6 +53,28 @@ padding: 0rem 0rem 5rem;
     width: 100%;
 }
 
+/* buttons */
+
+.btn{
+    border: 1px solid black;
+    width: auto;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    font-size: larger;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
 /* Colors */
 .bg-black{
 background-color: var(--black);
