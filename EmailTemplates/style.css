@@ -90,6 +90,14 @@ background-color: var(--black);
 background-color: var(--white);
 }
 
+.bg-purple{
+    background-color: var(--light-purple);
+}
+
+.color-p{
+    color: var(--light-purple);
+}
+
 /* flex */
 
 .d-flex{
