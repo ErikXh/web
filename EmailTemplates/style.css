@@ -54,7 +54,7 @@ padding: 0rem 0rem 5rem;
 }
 
 .round-corners{
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 /* buttons */
@@ -307,6 +307,10 @@ margin-bottom: 3rem;
 .product-image{
     width:8rem;
     border-radius: 10px;
+}
+
+div svg, div svg path{
+    color: var(--black);
 }
 
 @keyframes fadeIn {
