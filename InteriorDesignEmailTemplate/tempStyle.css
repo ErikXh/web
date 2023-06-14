@@ -282,6 +282,13 @@
 
     /**/
 
+    .main-section{
+        max-width: 900px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
     .header div{
         width: 100%;
         padding: 0.7rem;
@@ -311,8 +318,29 @@
         bottom: 2rem;
     }
 
-    .black-box{
+    .card-1 .container{
+        background-color: white;
+        position: relative;
+    }
+
+    .black-box-1, .black-box-2{
         width: 0.7rem;
         height: 0.7rem;
         background-color: var(--black);
+    }
+
+    .card div h1{
+        text-decoration: underline;
+    }
+
+    .black-box-2 {
+       float: right;
+    }
+
+    .card-1 h1{
+        float: right;
+    }
+
+    .right-quote{
+     float: right;
     }
