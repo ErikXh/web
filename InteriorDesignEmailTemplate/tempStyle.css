@@ -95,6 +95,10 @@
     .color-p{
         color: var(--light-purple);
     }
+
+    .bg-quote{
+        background-color: rgb(88, 75, 62);
+    }
     
     /* flex */
     
@@ -337,8 +341,9 @@
         float: right;
     }
 
-    .right-quote{
-     float: right;
+    .container .right-quote{
+     display: flex;
+     justify-content: end;
     }
 
     .card-1:nth-child(1){
@@ -348,6 +353,19 @@
     .card-1 .container{
     height: 10rem;
     position: relative;
-    right: 2rem;
+    right: 3rem;
     top: 1rem;
     }
+
+    .card-2:nth-child(2){
+        z-index: -1;
+    }
+
+    .card-2 .container{
+    background-color: white;
+    height: 10rem;
+    position: relative;
+    top: 1rem;
+    left: 6rem;
+    }
+
