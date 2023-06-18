@@ -28,6 +28,12 @@
     margin-right: auto;
     margin-left: auto;  
     }
+
+    .container-0{
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto; 
+    }
     
     .section{
     padding-top: 1rem;
@@ -55,13 +61,14 @@
     /* buttons */
     
     .btn{
-        border: 1px solid black;
+        border: none;
         width: auto;
-        padding: 0.5rem;
-        border-radius: 20px;
-        background-color: var(--white);
+        padding: 1rem;
+        background-color:rgb(88, 75, 62) ;
         display: flex;
         align-items: center;
+        color: antiquewhite;
+        font-weight: 700;
     }
     
     .icon{
@@ -84,8 +91,7 @@
     }
 
     .color-beige{
-        color: rgb(199, 199, 152);
-        font-weight: 200;
+        color: antiquewhite;
     }
     
     .bg-purple{
@@ -98,6 +104,10 @@
 
     .bg-quote{
         background-color: rgb(88, 75, 62);
+    }
+
+    .color-quote{
+        color: antiquewhite;
     }
     
     /* flex */
@@ -119,7 +129,7 @@
     }
     
     .justify-right{
-    justify-content: flex-right; 
+    justify-content: flex-start; 
     }
     
     .space-around{
@@ -284,7 +294,7 @@
         margin: 0 auto;
     }
 
-    /**/
+    /*costum CSS*/
 
     .main-section{
         max-width: 900px;
@@ -305,12 +315,14 @@
 
     .home-img{
         width: 100%;
+        object-fit: cover;
+        height: 20rem;
     }
 
     .bg-color-brown{
         padding: 0;
         margin: 0;
-        background-color: rgb(211, 93, 93);
+        background-color: antiquewhite;
         height: 1rem;
     }
 
@@ -322,9 +334,13 @@
         bottom: 2rem;
     }
 
-    .card-1 .container{
+    .card-1 .container-0{
         background-color: white;
         position: relative;
+        height: 10rem;
+        position: relative;
+        right: 3rem;
+        top: 1rem;
     }
 
     .black-box-1, .black-box-2{
@@ -333,7 +349,11 @@
         background-color: var(--black);
     }
 
-.card-1, .card-2 h1{
+    .black-box-2{
+       float: right;
+    }
+
+    .card-1 h1, .card-2 h1{
         text-decoration: underline;
     }
 
@@ -350,18 +370,11 @@
         z-index: -1;
     }
 
-    .card-1 .container{
-    height: 10rem;
-    position: relative;
-    right: 3rem;
-    top: 1rem;
-    }
-
     .card-2:nth-child(2){
         z-index: -1;
     }
 
-    .card-2 .container{
+    .card-2 .container-0{
     background-color: white;
     height: 10rem;
     position: relative;
@@ -369,3 +382,23 @@
     left: 6rem;
     }
 
+    .bg-img-card{
+        width: 30%;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        height: 12rem;
+        object-fit: cover;
+    }
+ 
+    .first-img{
+        background-image: url(https://images.unsplash.com/photo-1558211583-d26f610c1eb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1106&q=80);
+    }
+
+    .second-img{
+        background-image: url(https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1109&q=80);
+    }
+
+    .third-img{
+        background-image: url(https://images.unsplash.com/photo-1533008093099-e2681382639a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80);
+    }
