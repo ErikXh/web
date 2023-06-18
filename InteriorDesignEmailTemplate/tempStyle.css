@@ -69,7 +69,7 @@
         align-items: center;
         color: antiquewhite;
         font-weight: 700;
-    }
+    }cir
     
     .icon{
         font-size: larger;
@@ -401,4 +401,33 @@
 
     .third-img{
         background-image: url(https://images.unsplash.com/photo-1533008093099-e2681382639a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80);
+    }
+
+    .sm-container{
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        border: 1px solid var(--black);
+    }
+
+    /* media query*/
+
+    @media screen and (max-width: 623px) {
+
+        .card-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .card-1, .card-2{
+           position: unset;
+           width: 80%;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        }
     }
