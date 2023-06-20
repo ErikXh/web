@@ -419,15 +419,38 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin: 0 auto;
         }
 
         .card-1, .card-2{
-           position: unset;
-           width: 80%;
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-           align-items: center;
+            padding: 1rem;
+            position: unset;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .width-auto{
+            width: auto;
+        }
+
+        .position-unset{
+            position: unset;
+        }
+
+        .width-80-s{
+            width: 80%;
+        }
+
+        .card-2{
+            flex-direction: column-reverse;
+        }
+
+        .promo-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 40rem;
         }
     }
