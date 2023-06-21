@@ -435,7 +435,11 @@
             width: auto;
         }
 
-        .position-unset{
+        .card-1 .container-0{
+            position: unset;
+        }
+
+        .card-2 .container-0{
             position: unset;
         }
 
