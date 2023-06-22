@@ -349,7 +349,12 @@ width: 2rem;
 }
 
 /* test animation */
+/*
 
+Bug to be fixed
+
+If the animation gets activated 
+the animated section will appear over vry other element
 @keyframes fadeIn {
 0% {
     opacity: 0;
@@ -369,7 +374,7 @@ animation: fadeIn 1s ease-out forwards;
 animation: fadeIn 1.25s ease-out forwards;  
 }
   
-
+*/
 
 /* features section */
 
