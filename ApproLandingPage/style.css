@@ -36,3 +36,9 @@
     justify-content: center;
     align-items: center;
 }
+
+.green-circle:hover{
+    background-color: var(--pale-green);
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+}
