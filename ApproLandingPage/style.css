@@ -8,6 +8,7 @@
     /* Most common color vaiables*/
     --pale-blue: #79e6f2;
     --pale-green:#79f7d8;
+    --gree-darker:#4fa993;
     --white:#f1f1f1;
     --black:#000;
 }
@@ -45,4 +46,30 @@
 
 .border-circle{
     border-radius: 50%;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(160, 160, 160);
+}
+
+.price-button{
+    border-radius: 2rem;
+    border: 1px solid var(--gree-darker);
+    color: var(--gree-darker);
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.price-button:hover{
+    background-color: var(--gree-darker);
+    color: var(--white);
+    transition: 0.3s ease-out;
+    box-shadow: 2px 3px 3px rgb(163, 163, 163);
+}
+
+.price-card h3 span:hover{
+    color: var(--gree-darker);
 }
