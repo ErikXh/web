@@ -18,3 +18,24 @@ links.forEach((e)=>{
       sideMenu.classList.add('hidden');
    })
 })
+
+//test
+
+const faqArrow = document.querySelectorAll("#faq-arrow");
+const hiddenP = document.getElementById("hide-p");
+
+faqArrow.forEach((e)=>{
+   e.addEventListener("click", ()=>{
+     // it does not work atm faqArrow.style.transform = "rotate(180deg)";
+      if(hiddenP.classList.contains("hidden")){
+        
+        hiddenP.classList.remove("hidden"); 
+        hiddenP.classList.add("open");
+        //console.log("clicked"); 
+      }else{
+        hiddenP.classList.remove("open"); 
+        hiddenP.classList.add("hidden");
+      }
+      
+   })
+})
