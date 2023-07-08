@@ -73,3 +73,17 @@
 .price-card h3 span:hover{
     color: var(--gree-darker);
 }
+
+.btn-rotate-180{
+    transform: rotate(180deg);
+}
+
+.download-btn{
+    border: 1px solid var(--white);
+    border-radius: 2rem;
+    width: 10rem;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-evenly;
+    align-content: center;
+}
