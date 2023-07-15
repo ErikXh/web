@@ -83,3 +83,14 @@ faqArrow4.addEventListener("click", ()=>{
       }
       
    })
+
+
+   // test
+let faqContainer = document.getElementById('faq_container');
+
+
+faqContainer.addEventListener("click", function(e) {
+  let tab = e.target;
+
+  console.log(tab)
+})
