@@ -94,3 +94,12 @@ faqContainer.addEventListener("click", function(e) {
 
   console.log(tab)
 })
+
+
+// change color of navigation bar
+
+let nav = document.getElementById("nav");
+
+document.addEventListener('scroll', () => {
+  nav.classList.toggle("bg-blue-400", window.scrollY > 30);
+})

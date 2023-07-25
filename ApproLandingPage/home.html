@@ -9,9 +9,9 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="box-border">
-<header class="bg-blue-400 fixed w-full z-10">
+<header class="bg-gradient-to-br from-green-200 via-blue-300 to-blue-500 w-full">
  <!-- Navbar -->
- <nav class="relative container mx-auto p-6 max-w-7xl drop-shadow-md">
+ <nav class="container mx-auto p-6 max-w-7xl drop-shadow-md fixed z-10" id="nav">
   <div class="flex items-center justify-between">
     <div class="pt-2">
       <h1 class="text-3xl font-bold text-white">
@@ -37,8 +37,8 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div class="md:hidden ">
-    <div id="side-menu" class="absolute flex flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-blue-400 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+  <div class="md:hidden">
+    <div id="side-menu" class="absolute flex flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-blue-400 sm:w-auto sm:self-center left-6 right-6 shadow-lg">
       <a href="#home" class="text-white font-light text-l hover:text-gray-600 capitalize mini-nav-links-js">home </a>
       <a href="#work" class="text-white font-light text-l hover:text-gray-600 capitalize mini-nav-links-js">work</a>
       <a href="#features" class="text-white font-light text-l hover:text-gray-600 capitalize mini-nav-links-js">features</a>
@@ -50,10 +50,8 @@
     </div>
   </div>
 </nav>
-</header>
-
 <!-- Home section -->
-<section class="bg-blue-400 w-full  py-20" id="home">
+<section class=" w-full py-20" id="home">
   <div class="container max-w-7xl mx-auto md:flex md:content-center md:items-center py-6 w-10/12">
     <div class="md:w-full p-4 md:flex md:flex-col md:justify-start"> 
       <div class="p-1">
@@ -75,6 +73,9 @@
   </div>
 </section>
 <!-- End of Home section-->
+</header>
+
+
 <!-- App usage mini section -->
 <section class="bg-white w-full  p-6" id="app-mini-section">
   <div class="mx-auto max-w-7xl md:flex md:justify-even md:content-center md:w-10/12">
@@ -599,9 +600,9 @@
     </div>
   </div>
 
-  <div class="container mx-auto max-w-6 flex flex-wrap">
+  <div class="container mx-auto max-w-6 flex flex-col justify-center md:flex-row md:justify-around items-center">
 
-    <div id="faq_container" class="container mx-auto w-6/12">
+    <div id="faq_container" class="container mx-auto w-6/12 py-4">
       <!-- first FAQ -->
       <div class="p-2 faq-tab shadow-lg w-full">
         <div class="flex justify-between items-center p-4">
@@ -677,7 +678,7 @@
 
     </div>
 
-    <div class="container mx-auto flex items-center w-1/6">
+    <div class="container mx-auto flex items-center w-1/6 py-4">
         <img src="img/vertical_phone.png" alt="" class="w-10/12 object-contain">
     </div>
 
@@ -701,7 +702,7 @@
     </div>
   </div>
 
-  <div class="mx-auto max-w-7xl flex justify-even content-center w-10/12">
+  <div class="mx-auto max-w-7xl flex flex-col justify-center items-center md:flex-row md:justify-around w-10/12">
 
     <!-- first dowload btn -->
     <div class="flex flex-1 flex-col p-4 w-2/12 text-center items-center">
@@ -766,10 +767,10 @@
     </div>
   </div>
 
-  <div class="mx-auto max-w-7xl flex justify-even content-center w-10/12">
+  <div class="mx-auto max-w-7xl flex flex-col justify-center items-center md:flex-row md:justify-around w-10/12">
 
     <!-- First blog item-->
-    <div class="px-2 py-2 w-2/6 max-w-6">
+    <div class="px-2 py-2 md:w-4/6 w-2/3 max-w-6">
     <div class="container mx-auto shadow-lg">
         <div>
           <img src="img/blog_image.jpeg" alt="image for the blog" class="w-full object-cover">
@@ -806,7 +807,7 @@
     </div>
     
     <!-- second blog item-->
-    <div class="px-2 py-2 w-2/6 max-w-6">
+    <div class="px-2 py-2 md:w-4/6 w-2/3 max-w-6">
     <div class="container mx-auto shadow-lg">
           <div>
             <img src="img/blog_image.jpeg" alt="image for the blog" class="w-full object-cover">
@@ -843,7 +844,7 @@
     </div>
     
     <!-- third blog item-->
-    <div class="px-2 py-2 w-2/6 max-w-6">
+    <div class="px-2 py-2 md:w-4/6 w-2/3 max-w-6">
      <div class="container mx-auto shadow-lg">
       <div>
        <img src="img/blog_image.jpeg" alt="image for the blog" class="w-full object-cover">
@@ -886,40 +887,45 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5339.801352215102!2d19.81937083590852!3d41.31671919345483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135031d53942bf4b%3A0xc29b959022f4c53!2sAir%20Albania%20Stadium!5e0!3m2!1sen!2s!4v1688833301569!5m2!1sen!2s" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   <section class="container mx-auto max-w-10/12 ">
-   <div class="container relative bottom-20 flex items-center justify-around md:flex-row">
-    <div class="shadow-lg bg-white w-5/12 p-6" id="form">
+   <div class="container flex flex-col content-center items-center md:relative md:bottom-20 md:flex md:flex-row md:items-center md:justify-around">
+    <div class="shadow-lg bg-white w-9/12 md:w-6/12 p-6 py-4" id="form">
       <!--contact form-->
-    <form action="#" method="get">
-       <div class="flex flex-col items-center justify-between md:flex-row py-2">
-        <label for="name">
-        <input type="text" name="name" id="name" placeholder="name" class="p-2 w-full shadow-lg">
-       </label>
+      <form action="#" method="get">
+        <div class="w-full flex flex-col items-center justify-between md:flex-row py-2">
+          <div class="py-2 w-full">
+            <label for="name">
+              <input type="text" name="name" id="name" placeholder="name" class="p-2 w-full shadow-lg">
+            </label>
+          </div>
 
-       <label for="email">
-        <input type="email" name="email" id="email" placeholder="email" class="p-2 w-full shadow-lg">
-       </label>
-       </div>
-       <div class="py-2">
-        <label for="subject">
-          <input type="text" name="subject" id="subject" placeholder="subject" class="p-2 shadow-lg w-full">
-        </label>
-       </div>
+          <div class="py-2 w-full">
+            <label for="email">
+              <input type="email" name="email" id="email" placeholder="email" class="p-2 w-full shadow-lg">
+            </label>
+          </div>
 
-       <div class="py-2">
-        <label for="textarea">
-          <textarea name="txtarea" id="txtarea" cols="15" rows="5" placeholder="Message" class="p-2 shadow-lg w-full"></textarea>
-        </label>
-       </div>
+        </div>
+        <div class="py-2">
+          <label for="subject">
+            <input type="text" name="subject" id="subject" placeholder="subject" class="p-2 shadow-lg w-full">
+          </label>
+        </div>
 
-       <div class="py-2">
-        <button type="button" class="form-btn">Send Mesasge</button>
-       </div>
+        <div class="py-2">
+          <label for="textarea">
+            <textarea name="txtarea" id="txtarea" cols="15" rows="5" placeholder="Message" class="p-2 shadow-lg w-full"></textarea>
+          </label>
+        </div>
 
-    </form>
+        <div class="py-2">
+          <button type="button" class="form-btn">Send Mesasge</button>
+        </div>
+
+      </form>
     </div>
 
     <!--contact-->
-    <div class="w-3/6 bg-white p-6">
+    <div class="w-9/12 md:w-6/12 bg-white p-6 py-4">
       <h1 class="text-gray-500 capitalize font-bold text-xl py-2">
         address
       </h1>
@@ -956,7 +962,6 @@
    </div>
 
    <div class="p-3 flex flex-col items-center content-center">
-
      <!-- newsletter subscription-->
 
     <div class="py-2 w-4/6">
@@ -969,7 +974,6 @@
       </div>
       
     </div>
-
        <div class="py-3 flex flex-col w-4/6 justify-center">
 
         <div class="p-2 w-3/6 flex justify-center">
@@ -999,7 +1003,6 @@
         </div>
           
        </div>
-
    </div>
   </section>
 </footer>
