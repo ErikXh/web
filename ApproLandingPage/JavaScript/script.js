@@ -141,3 +141,43 @@ const reviewArray = [
  employeeName.innerHTML = reviewArray[0].name;
  employeePosition.innerHTML = reviewArray[0].workPosition;
  employeeQuote.innerHTML = reviewArray[0].quote;
+
+const qLeftArrow = document.getElementById("quote_arrow_left-js");
+const qRightArrow = document.getElementById("quote_arrow_right-js");
+
+let qIndex = 0;
+
+function changeQuote(count){
+
+      if(count == 2 || count > 2){
+
+          employeeName.innerHTML = reviewArray[0].name;
+          employeePosition.innerHTML = reviewArray[0].workPosition;
+          employeeQuote.innerHTML = reviewArray[0].quote;
+
+        } 
+        
+      if(count == 0 || count < 0){
+
+        employeeName.innerHTML = reviewArray[qIndex++].name;
+        employeePosition.innerHTML = reviewArray[qIndex++].workPosition;
+        employeeQuote.innerHTML = reviewArray[qIndex++].quote;
+
+        }
+
+      employeeName.innerHTML = reviewArray[count+1].name;
+      employeePosition.innerHTML = reviewArray[count+1].workPosition;
+      employeeQuote.innerHTML = reviewArray[count+1].quote;
+        
+}
+
+qLeftArrow.addEventListener('click', ()=>{
+  changeQuote(qIndex - 1)
+  console.log("clicked left " + qIndex)
+})
+
+qRightArrow.addEventListener('click', ()=>{
+   changeQuote(qIndex + 1)
+   console.log("clicked " + qIndex)
+})
+
