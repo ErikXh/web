@@ -61,7 +61,7 @@ faqArrow3.addEventListener("click", ()=>{
         faqArrow3.classList.add("btn-rotate-180");
         hiddenP3.classList.remove("hidden"); 
         hiddenP3.classList.add("open");
-        console.log("clicked"); 
+        //console.log("clicked"); 
       }else{
         faqArrow3.classList.remove("btn-rotate-180");
         hiddenP3.classList.remove("open"); 
@@ -75,7 +75,7 @@ faqArrow4.addEventListener("click", ()=>{
         faqArrow4.classList.add("btn-rotate-180");
         hiddenP4.classList.remove("hidden"); 
         hiddenP4.classList.add("open");
-        console.log("clicked"); 
+        //console.log("clicked"); 
       }else{
         faqArrow4.classList.remove("btn-rotate-180");
         hiddenP4.classList.remove("open"); 
@@ -86,19 +86,58 @@ faqArrow4.addEventListener("click", ()=>{
 
 
    // test
-let faqContainer = document.getElementById('faq_container');
 
-faqContainer.addEventListener("click", function(e) {
-  let tab = e.target;
+ let faqContainer = document.getElementById('faq_container');
 
-  console.log(tab)
-})
+// faqContainer.addEventListener("click", (e)=> {
+//   let tab = e.target;
+
+   
+
+//   console.log(tab)
+// })
 
 
 // change color of navigation bar
 
 let nav = document.getElementById("nav");
 
+// back to top button
+const topBtn = document.getElementById("top-btn-js");
+
 document.addEventListener('scroll', () => {
   nav.classList.toggle("bg-blue-400", window.scrollY > 30);
+  if ((window.scrollY > 100) ? topBtn.classList.remove("hidden") : topBtn.classList.add("hidden"));
 })
+
+topBtn.addEventListener('click', ()=>{
+  document.documentElement.scrollTop = 0;
+})
+
+// Reviews section
+
+const employeeName = document.getElementById("name-js");
+const employeePosition = document.getElementById("position-js");
+const employeeQuote = document.getElementById("quote-js");
+
+const reviewArray = [
+   {
+    name:"Mr. Doe",
+    workPosition:"Manager",
+    quote:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nisi nesciunt rem velit laborum corporis voluptas repellendus possimus vero, iste laboriosam vitae, rerum fugiat dolorem."
+   },
+   {
+    name:"Mr. John",
+    workPosition:"Tech Lead",
+    quote:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nisi laborum corporis voluptas repellendus possimus vero, iste laboriosam vitae, rerum fugiat dolorem."
+   },
+   {
+    name:"Mr. Newaz",
+    workPosition:"Creative director",
+    quote:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nisi nesciunt rem velit laborum possimus vero, iste laboriosam vitae, rerum fugiat dolorem."
+   }
+];
+
+ employeeName.innerHTML = reviewArray[0].name;
+ employeePosition.innerHTML = reviewArray[0].workPosition;
+ employeeQuote.innerHTML = reviewArray[0].quote;
