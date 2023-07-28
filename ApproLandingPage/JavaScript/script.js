@@ -195,28 +195,26 @@ form.addEventListener('submit', (e)=>{
   const subject = document.getElementById("subject").value;
   const txtArea = document.getElementById("txtarea").value;
 
-  // if (!name.value.trim() || !email.value.trim() || !subject.value.trim() || !txtArea.value.trim()) {
-  //   alert("Please fill out all required fields.");
-  //   e.preventDefault();
-  // }
+  if (!name.trim() || !email.trim() || !subject.trim() || !txtArea.trim()) {
+    alert("Please fill out all required fields.");
+    e.preventDefault();
+  }
 
   console.log(name, email, subject , txtArea);
 
-  let data = e.serialize()
 
-  console.log(data);
+  // --- test ----
 
-  // let xhr = new XMLHttpRequest()
-  // xhr.open('POST', '#', true)
-  // xhr.send(data)
+  let xhr = new XMLHttpRequest()
+  xhr.open('POST', '#', true)
 
-  // xhr.onload = ()=> {
-  //     if (xhr.status == 200) {
-  //         alert("Form submited succesfully!")
-  //     }
+  xhr.onload = ()=> {
+      if (xhr.status == 200) {
+          alert("Form submited succesfully!")
+      }
 
-  //     if (xhr.status == 500) {
-  //         alert("Form was not submited.")
-  //     }
-  // }
+      if (xhr.status == 500) {
+          alert("Form was not submited.")
+      }
+  }
 })
