@@ -182,3 +182,41 @@ qRightArrow.addEventListener('click', ()=>{
   //console.log("clicked " + index)
 })
 
+// form validation
+
+const form = document.getElementById("contact_form");
+
+form.addEventListener('submit', (e)=>{
+
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const subject = document.getElementById("subject").value;
+  const txtArea = document.getElementById("txtarea").value;
+
+  // if (!name.value.trim() || !email.value.trim() || !subject.value.trim() || !txtArea.value.trim()) {
+  //   alert("Please fill out all required fields.");
+  //   e.preventDefault();
+  // }
+
+  console.log(name, email, subject , txtArea);
+
+  let data = e.serialize()
+
+  console.log(data);
+
+  // let xhr = new XMLHttpRequest()
+  // xhr.open('POST', '#', true)
+  // xhr.send(data)
+
+  // xhr.onload = ()=> {
+  //     if (xhr.status == 200) {
+  //         alert("Form submited succesfully!")
+  //     }
+
+  //     if (xhr.status == 500) {
+  //         alert("Form was not submited.")
+  //     }
+  // }
+})
