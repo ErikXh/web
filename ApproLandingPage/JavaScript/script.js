@@ -135,6 +135,11 @@ const reviewArray = [
     name:"Mr. Newaz",
     workPosition:"Creative director",
     quote:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nisi nesciunt rem velit laborum possimus vero, iste laboriosam vitae, rerum fugiat dolorem."
+   },
+   {
+    name:"Mr. Zawen",
+    workPosition:"Team leader",
+    quote:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nisi nesciunt rem velit laborum possimus vero, iste laboriosam vitae, rerum fugiat dolorem."
    }
 ];
 
@@ -145,39 +150,26 @@ const reviewArray = [
 const qLeftArrow = document.getElementById("quote_arrow_left-js");
 const qRightArrow = document.getElementById("quote_arrow_right-js");
 
-let qIndex = 0;
+function changeQuote(){
 
-function changeQuote(count){
-
-      if(count == 2 || count > 2){
-
-          employeeName.innerHTML = reviewArray[0].name;
-          employeePosition.innerHTML = reviewArray[0].workPosition;
-          employeeQuote.innerHTML = reviewArray[0].quote;
-
-        } 
-        
-      if(count == 0 || count < 0){
-
-        employeeName.innerHTML = reviewArray[qIndex++].name;
-        employeePosition.innerHTML = reviewArray[qIndex++].workPosition;
-        employeeQuote.innerHTML = reviewArray[qIndex++].quote;
-
-        }
-
-      employeeName.innerHTML = reviewArray[count+1].name;
-      employeePosition.innerHTML = reviewArray[count+1].workPosition;
-      employeeQuote.innerHTML = reviewArray[count+1].quote;
-        
+        employeeName.innerHTML = reviewArray[index].name;
+        employeePosition.innerHTML = reviewArray[index].workPosition;
+        employeeQuote.innerHTML = reviewArray[index].quote;
 }
 
+let index = 0;
+
 qLeftArrow.addEventListener('click', ()=>{
-  changeQuote(qIndex - 1)
-  console.log("clicked left " + qIndex)
+
+  index = (index - 1 + reviewArray.length) % reviewArray.length;
+  changeQuote()
+  console.log("clicked left " + index)
 })
 
 qRightArrow.addEventListener('click', ()=>{
-   changeQuote(qIndex + 1)
-   console.log("clicked " + qIndex)
+
+  index = (index + 1) % reviewArray.length;
+  changeQuote()
+   console.log("clicked " + index)
 })
 
