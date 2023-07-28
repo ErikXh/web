@@ -123,7 +123,7 @@ const employeeQuote = document.getElementById("quote-js");
 const reviewArray = [
    {
     name:"Mr. Doe",
-    workPosition:"Manager",
+    workPosition:"manager",
     quote:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nisi nesciunt rem velit laborum corporis voluptas repellendus possimus vero, iste laboriosam vitae, rerum fugiat dolorem."
    },
    {
@@ -133,12 +133,22 @@ const reviewArray = [
    },
    {
     name:"Mr. Newaz",
-    workPosition:"Creative director",
+    workPosition:"creative director",
     quote:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nisi nesciunt rem velit laborum possimus vero, iste laboriosam vitae, rerum fugiat dolorem."
    },
    {
     name:"Mr. Zawen",
-    workPosition:"Team leader",
+    workPosition:"team leader",
+    quote:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nisi nesciunt rem velit laborum possimus vero, iste laboriosam vitae, rerum fugiat dolorem."
+   },
+   {
+    name:"Mr. Erik",
+    workPosition:"Developer",
+    quote:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nisi nesciunt rem velit laborum possimus vero, iste laboriosam vitae, rerum fugiat dolorem."
+   },
+   {
+    name:"Mr. Brown",
+    workPosition:"team manager",
     quote:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nisi nesciunt rem velit laborum possimus vero, iste laboriosam vitae, rerum fugiat dolorem."
    }
 ];
@@ -150,26 +160,25 @@ const reviewArray = [
 const qLeftArrow = document.getElementById("quote_arrow_left-js");
 const qRightArrow = document.getElementById("quote_arrow_right-js");
 
-function changeQuote(){
-
-        employeeName.innerHTML = reviewArray[index].name;
-        employeePosition.innerHTML = reviewArray[index].workPosition;
-        employeeQuote.innerHTML = reviewArray[index].quote;
-}
-
 let index = 0;
+
+function changeQuote(){
+    employeeName.innerHTML = reviewArray[index].name;
+    employeePosition.innerHTML = reviewArray[index].workPosition;
+    employeeQuote.innerHTML = reviewArray[index].quote;
+}
 
 qLeftArrow.addEventListener('click', ()=>{
 
   index = (index - 1 + reviewArray.length) % reviewArray.length;
   changeQuote()
-  console.log("clicked left " + index)
+  //console.log("clicked left " + index)
 })
 
 qRightArrow.addEventListener('click', ()=>{
 
   index = (index + 1) % reviewArray.length;
   changeQuote()
-   console.log("clicked " + index)
+  //console.log("clicked " + index)
 })
 
